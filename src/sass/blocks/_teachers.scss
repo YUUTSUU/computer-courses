@@ -1,0 +1,59 @@
+.teachers {
+  padding-top: 230px;
+
+  &__img {
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: -25px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__header {
+    padding-left: 135px;
+  }
+
+  &__wrapper {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: minmax(380px, auto);
+    margin-top: 105px;
+  }
+
+  &__item {
+    justify-self: center;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+  }
+
+  &__description {
+    display: block;
+    margin-top: 30px;
+    border: 1px solid $text-color;
+    border-radius: 50px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      color: $text-color;
+      background: rgb(48, 38, 38);
+    }
+  }
+}

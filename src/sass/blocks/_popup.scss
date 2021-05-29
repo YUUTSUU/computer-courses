@@ -1,0 +1,101 @@
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    border-radius: 5px;
+    padding: 30px 40px 20px;
+    background: rgb(109, 150, 226);
+    transform: translateX(-50%);
+  }
+
+  &__close {
+    position: absolute;
+    right: -40px;
+    top: -15px;
+    border: none;
+    color: rgb(109, 150, 226);
+    background: 0 0;
+
+    strong {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  &__input {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.733);
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.863);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: $text-color;
+    background: rgb(206, 59, 59);
+    transition: all 0.3s;
+
+    &_in {
+      margin-bottom: 30px;
+      height: 55px;
+    }
+
+    &_reg {
+      margin-bottom: 30px;
+      height: 55px;
+    }
+
+    &:hover {
+      text-decoration-line: none;
+      color: $text-color;
+      background: rgb(175, 37, 37);
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+}

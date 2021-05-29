@@ -1,0 +1,30 @@
+.partners {
+  padding-top: 230px;
+
+  &__img {
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: -25px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__header {
+    padding-left: 130px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    margin-top: 90px;
+  }
+
+  &__item {
+    align-self: center;
+    justify-self: center;
+  }
+}

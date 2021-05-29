@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  height: 44px;
+
+  &__blue {
+    justify-self: end;
+    width: 183px;
+    background: $gradient-blue;
+    transition: all 0.5s;
+
+    &:hover {
+      background: $gradient-hover-blue;
+    }
+  }
+
+  &__red {
+    align-self: center;
+    width: 169px;
+    background: $gradient-red;
+    transition: all 0.5s;
+
+    &:hover {
+      background: $gradient-hover-red;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

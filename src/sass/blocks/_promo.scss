@@ -1,0 +1,54 @@
+.promo {
+  padding: 40px 80px 218px;
+  min-height: 100vh;
+  background: url("../img/main.jpg") center center/cover no-repeat;
+
+  &__nav {
+    display: grid;
+    column-gap: 100px;
+    align-items: center;
+    grid-template-columns: 3fr 2fr 2fr;
+  }
+
+  &__menu {
+    display: grid;
+    column-gap: 55px;
+    grid-template-columns: repeat(6, 1fr);
+    list-style: none;
+    padding-top: 10px;
+    height: 24px;
+
+    li a {
+      color: $text-color;
+      transition: all 0.5s;
+
+      &:hover {
+        text-decoration-line: none;
+        color: rgb(136, 135, 135);
+      }
+    }
+  }
+
+  &__header {
+    margin-top: 190px;
+    width: 810px;
+  }
+
+  &__timer {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__timer-item {
+    margin-right: 30px;
+    padding: 20px 30px;
+    width: 107px;
+    height: 112px;
+    text-align: center;
+    background: #121212;
+
+    span {
+      opacity: 0.4;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  text-align: center;
+
+  &__img {
+    position: relative;
+    transform: translateX(-65px);
+
+    img {
+      position: absolute;
+      top: -130px;
+      transform: rotate(135deg);
+    }
+  }
+
+  &__subheader {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 400px;
+    opacity: 0.5;
+  }
+
+  &__wrapper {
+    display: grid;
+    column-gap: 60px;
+    align-self: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 6px 1fr;
+    margin-top: 20px;
+    width: 600px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    min-height: 460px;
+
+    &_left {
+      text-align: right;
+    }
+
+    &_right {
+      text-align: left;
+    }
+  }
+
+  &__divider {
+    position: relative;
+
+    &::before {
+      @include before_line;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 80px;
+
+    &_left {
+      &::after {
+        @include before_line_left;
+      }
+    }
+
+    &_right {
+      &::after {
+        @include before_line_right;
+      }
+    }
+  }
+
+  &__long {
+    opacity: 0.5;
+  }
+
+  &__title {
+    margin-top: 15px;
+    color: $text-color;
+  }
+}

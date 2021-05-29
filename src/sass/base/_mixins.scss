@@ -1,0 +1,31 @@
+@mixin before_line {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 6px;
+  height: 585px;
+  background: $gradient-blue;
+}
+
+@mixin before_line_left {
+  content: "";
+  position: absolute;
+  right: -65px;
+  top: 45px;
+  width: 40px;
+  height: 2px;
+  background: $text-color;
+  opacity: 0.3;
+}
+
+@mixin before_line_right {
+  content: "";
+  position: absolute;
+  left: -65px;
+  top: 45px;
+  width: 40px;
+  height: 2px;
+  background: $text-color;
+  opacity: 0.3;
+}
